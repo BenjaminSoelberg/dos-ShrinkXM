@@ -1,0 +1,165 @@
+<pre>The OBSESSiON XM optimizer, ver 1.2 [01/01]
+───────────────────────────────────────────
+This is a FAST TRACKER XM MODULE OPTIMIZER.
+You can remove unused patterns, samples and
+clip End Of Loop sampledata, and still keep
+the text, written in the samplenames. It is
+easy to use and VERY fast. This is CARDWARE
+───────────────────────────────────────────
+Now with full sourcecode for Borland Pascal 
+───────────────────────────────────────────
+ by ▄─▄ ▄   ▄─▄ ▄─▄ ▄─▄ ▄─▄ ▄ ▄─▄ ▄─▄
+    █ █ █─▄ ▀─▄ █─  ▀─▄ ▀─▄ ▄ █ █ █ █
+    █ █ █ █ ▄ █ █   ▄ █ ▄ █ █ █ █ █ █
+    ▀▀▀ ▀▀▀ ▀▀▀ ▀▀▀ ▀▀▀ ▀▀▀ ▀ ▀▀▀ ▀ ▀ 1998
+────────────────────[BUGSY/OBSESSiON]──────
+         Now its Pentium safe
+
+
+
+ ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+ █                                                                            █
+ █           <*>  FAST TRACKER XM MODULE OPTIMIZER VERSION 1.2   <*>          █
+ █                                                                            █
+ █                  by ▄─▄ ▄   ▄─▄ ▄─▄ ▄─▄ ▄─▄ ▄ ▄─▄ ▄─▄                      █
+ █                     █ █ █─▄ ▀─▄ █─  ▀─▄ ▀─▄ ▄ █ █ █ █                      █
+ █                     █ █ █ █ ▄ █ █   ▄ █ ▄ █ █ █ █ █ █                      █
+ █                     ▀▀▀ ▀▀▀ ▀▀▀ ▀▀▀ ▀▀▀ ▀▀▀ ▀ ▀▀▀ ▀ ▀ 1997                 █
+ █                                                                            █
+ █────────────────────────────────────────────────────────────────────────────█
+ █ Handle  Real name         Age Profession E-Mail address   Group activity   █
+ █────────────────────────────────────────────────────────────────────────────█
+ █ Bugsy   Benjamin Petersen  24 Programmer _bugsy@usa.net   Coder, organizer █
+ █ Spawn   Michael Skovslund  23 Programmer _spawn@usa.net   Coder, gfx       █
+ █ Icicle  Henrik Eiriksson   24 Study IFA  _icicle@usa.net  Music, art       █
+ █ Hendrix Patrick Enoch      21 Study Math _hendrix@usa.net Coder, unpackers █
+ █────────────────────────────────────────────────────────────────────────────█
+ █                                                                            █
+ █   PLEASE CHECKOUT OUR INTERNET HOMEPAGE AT : WWW.CYBERNET.DK/USERS/BUGSY   █
+ █                                                                            █
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+INDEX
+
+  History
+  Introduction
+  Disclaimer
+  How to register
+  Program documentation
+  How to get in touch with us
+  Greetings
+
+■ History
+  Version   Release Note
+
+      1.0   First public release
+      1.1   Fixed a text strings.
+            Fixed a bug that caused SHRINKXM to wrap some samples in patches.
+            Thanks to Dagoon Autumn for pointing that out to me.
+            Now with wildcard support, so you can optimize 
+            all or some of the files in a directory that you decide.
+      1.2   Recompiled to get rid of the Pentium bug (runtime error 200)
+
+■ Introduction
+
+  This utility gives you the ability to optimize FAST TRACKER XM modules.
+  You can remove unused patterns, samples and clip looped samples. All this
+  and still keeping the original descriptions written in the samplenames.
+
+  ----------------------------------------------------------------------------
+  NOTICE : If you get the message 'out of memory' and you have more than
+           300K free, it might be because the XM file isn't packed. To solve
+           this problem, please load the XM into Fast Tracker II, save it and
+           try SHRINKXM on it again. If this dosn't help, free up some memory.
+  ----------------------------------------------------------------------------
+
+■ Disclaimer
+  This software has been tested and found to work properly. OBSESSiON have no
+  responsbility whatsoever for any damages caused by use, or misuse of this
+  software.
+
+  IF YOU DISAGREE WITH ANY OF THOSE TERMS, PLEASE REMOVE THIS SOFTWARE NOW.
+
+■ How to register
+  If you, after a 30 days test period, wish to continue using this software,
+  you NEED to send me a postcard with your name and address or register at our
+  homepage at HTTP://WWW.CYBERNET.DK/USERS/BUGSY. The reason is that it's the
+  ONLY way I can explain to my wife why I have invested MORE than 90 hours
+  developing this software. This is the only way I can see that someone is
+  really using this software. If I don't receive anything by mail, I won't
+  update the program no more.
+
+  This means :
+    IF NOT (ReceivedAnyPostCardOrEMail) THEN
+      HALT (Programmer)
+    ELSE
+      ReleaseNextVersion
+
+■ Program documentation
+
+  To optimize an XM module just type :
+    SHRINKXM.EXE xmfilename [optional parameters]
+
+  Like this :
+    SHRINKXM.EXE jz-oft3.xm
+
+  or if you wish to optimize all XM files beginning with "jz-" :
+    SHRINKXM.EXE jz-*.xm
+
+  If you start SHRINKXM without any (or valid) parameters, you will see a
+  help screen like this :
+
+    USAGE : SHRINKXM.EXE infile.xm outfile.xm [-NP] [-NS] [-NSL] [-NB]
+
+    -NP  Do NOT remove unused patterns
+    -NS  Do NOT remove unused samples
+    -NSL Do NOT clip at end of sampleloops
+    -NB  Do NOT make any backup files
+
+    Wildcards are allowed in the xmfilename.
+    Like : SHRINKXM.EXE jz-*.xm
+
+  By default SHRINKXM optimizes patterns, samples, sampleloops and
+  make backup files (with the extention .BAK).
+
+■ How to get in touch with us
+
+  If you have any questions about the use of these programs, feel free to
+  contact us.
+
+  You can get in touch with us by :
+
+  Writing a letter to	: Benjamin Petersen
+			  Skovburren 171
+			  DK-4700 Naestved
+			  Denmark
+
+  E-Mail me at		: _bugsy@usa.net
+
+  World Wide Web (WWW)	: http://www.cybernet.dk/users/bugsy
+
+  Call me at		: +45 53 725-610 or +45 40 204-347
+
+  Have fun, and remember there are still some people who DON'T take money
+  for making good programs. By the way, PLEASE SEND ME A POSTCARD.
+
+  [BUGSY/OBSESSiON]
+
+■ Greetings
+
+  Because those people have registered, they got there name in the
+  greeting list. YOU should do the same, and remember IT'S FREE.
+
+  Our greetings goes to (no order) :
+
+  Jakub Dzierzbicki : What about that ShrinkS3M stuff ?  Kevin Tseng
+  Henrik Eiriksson  : Man I love you.
+  Philippe Ahles    : Happy now ?
+  Dariush Safari    : What's up pal ?
+  Murilo Rodrigues
+  Richard Noordhof
+  Brian Piltz
+  DJ Roswell
+  MaNaGeR
+  Arrakis
+  Chou Yu</pre>
